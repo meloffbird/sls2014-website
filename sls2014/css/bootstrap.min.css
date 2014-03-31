@@ -158,8 +158,7 @@ width: 100%;
 	font-weight: 300;
 	text-align:center;
 	font-size:26px;
-	padding-top:70px;
-	padding-bottom:70px;
+	padding: 70px 10px 70px 10px;
 	background-color:#f1fbfd;
 	border-bottom:2px solid #e3f4f8;
 }
