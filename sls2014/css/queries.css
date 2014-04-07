@@ -4,7 +4,9 @@
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
-
+								/* SCHEDULE */
+								a.download:link, a.download:hover, a.download:visited, a.download:active { display: block; width: 200px; font-size: 12px;}
+								
 
 }
 /* Small devices (tablets, 768px and up) */
@@ -12,7 +14,7 @@
 
 
 								/* HOME PAGE */
-								p#abouttext{ margin: 0px 200px; }
+								p#abouttext{ margin: 0px 100px; }
 								.banner img{ height:500px; width:auto; overflow:hidden; }
 
 
@@ -27,6 +29,7 @@
 
 								/* SCHEDULE */
 								.scheduledoc img{ padding: 90px 10px; }
+
 
 }
 

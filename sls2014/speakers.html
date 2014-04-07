@@ -15,6 +15,27 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+      <script>
+    $(function() {
+      var pull    = $('#pull');
+        menu    = $('nav ul');
+        menuHeight  = menu.height();
+
+      $(pull).on('click', function(e) {
+        e.preventDefault();
+        menu.slideToggle();
+      });
+
+      $(window).resize(function(){
+            var w = $(window).width();
+            if(w > 320 && menu.is(':hidden')) {
+              menu.removeAttr('style');
+            }
+        });
+    });
+  </script>
+
   </head>
   <body>
 
@@ -50,24 +71,29 @@
         </div>
 
       </div> <!--end container fluid-->
-    </nav> 
+    </nav>
+
+
+    <nav class="panelsnav">
+      <ul class="clearfix">
+          <li><a href="#keynotes">Keynotes</a></li>
+          <li><a href="#activism">Activism</a></li>
+          <li><a href="#analytics">Analytics</a></li>
+          <li><a href="#design">Design</a></li>
+          <li><a href="#entertainment">Entertainment</a></li>
+          <li><a href="#fashion">Fashion</a></li>
+          <li><a href="#food">Food</a></li>
+          <li><a href="#journalism">Journalism</a></li>
+          <li><a href="#branding">Branding</a></li>
+          <li><a href="#politics">Politics</a></li>
+          <li><a href="#startups">Startups</a></li>
+          <li><a href="#students">Students</a></li>
+        </ul>
+      <a href="#" id="pull">Menu</a>
+      </nav>
+
 
     <div class="container-fluid">
-
-      <div class="panelsnav">
-        <ul><a href="#keynotes">Keynotes</a></ul>
-        <ul><a href="#activism">Activism</a></ul>
-        <ul><a href="#analytics">Analytics</a></ul>
-        <ul><a href="#design">Design</a></ul>
-        <ul><a href="#entertainment">Entertainment</a></ul>
-        <ul><a href="#fashion">Fashion</a></ul>
-        <ul><a href="#food">FOOD</a></ul>
-        <ul><a href="#journalism">Journalism</a></ul>
-        <ul><a href="#branding">Branding</a></ul>
-        <ul><a href="#politics">Politics</a></ul>
-        <ul><a href="#startups">Startups</a></ul>
-        <ul><a href="#students">Students</a></ul>
-      </div>
 
       <!-- ------ TOP BANNER----- --> 
       <div id="speakers-page">
@@ -222,7 +248,7 @@
             </div>
 
             <div class="bio col-sm-5">
-             <p>Dayna Geldwert is the Digital Producer for Girl Up, a campaign of the United Nations Foundation that empowers girls to raise awareness and funds for UN programs that help some of the world’s hardest-to-reach adolescent girls. In this role, she manages Girl Up’s online community of more than 375,000 supporters around the world, developing and implementing a digital strategy for Girl Up’s social media channels, email campaigns and website. Through innovative and creative campaigns, Dayna encourages youth to leverage the power of digital platforms to amplify their voices, inspire collective action and make a difference in the lives of girls in developing countries. She previously worked as the Online Communications Associate at the Rape, Abuse & Incest National Network (RAINN).</p>
+             <p>Dayna Geldwert is the Digital Producer for Girl Up, a campaign of the United Nations Foundation that empowers girls to raise awareness and funds for UN programs that help some of the world’s hardest-to-reach adolescent girls. In this role, she manages Girl Up's online community of more than 375,000 supporters around the world, developing and implementing a digital strategy for Girl Up's social media channels, email campaigns and website. Through innovative and creative campaigns, Dayna encourages youth to leverage the power of digital platforms to amplify their voices, inspire collective action and make a difference in the lives of girls in developing countries. She previously worked as the Online Communications Associate at the Rape, Abuse & Incest National Network (RAINN).</p>
             </div>
 
           </div>
@@ -269,7 +295,7 @@
           <div class="row">
 
             <div class="name-title col-sm-4 col-sm-offset-1">
-            <img src="images/speakers/zevkanter-analytics.png">
+            <img src="images/speakers/ZEVKANTER-analytics.png">
             <p>ZEV KANTER<br><span7>Social Media Strategist</span7><br>HUGE INC.</p>
             </div>
 
@@ -318,7 +344,8 @@
             <p>ALEJANDRA OWENS<br><span7>Senior Advisor</span7><br>AARP</p>
             </div>
             <div class="bio col-sm-5">
-            <p>Allen Gannett is the Chief Maven and Founder of TrackMaven, a platform that lets marketers track, benchmark against their competitors digital marketing. With clients including Marketo, Martha Stewart Living Omnimedia, the NBA, and more, TrackMaven helps the world’s best marketers be proactive. He also serves as a General Partner at Acceleprise Ventures, where he invests in early-stage SaaS companies. Previously he was CEO of Splash Networks. Obsessed with Pumpkin Pie and Corgis, Allen lives in Washington, DC and once was a very pitiful runner-up on Wheel of Fortune. </p>
+            <p>Currently, Alejandra is a senior advisor on the AARP Social Communications team. She manages enterprise-wide social media initiatives, social business integration as well as identifies new communications platforms and business models to incubate for the organization. She regularly works to educate business units on how social media can help them achieve their goals. Alejandra is a frequent speaker, panelist and guest lecturer on social communications. She has spoken nationally and locally at conferences and universities such as: Nonprofit Technology Conference, Social Media Week, Social Media Clubs, Bulldog Reporter, The George Washington University, American University, ICSC: Mobile, Social, Local and more.</p>
+            <p> Prior to her current role, Alejandra was the managing editor of AARP's blog.  She grew the blog from one contributor, one post a day and 100 page views a week to more than 40 contributors, up to seven pieces of original content a day and 5.6 million page views in 2012 alone. Content on the blog spanned an array of topics from travel and money-saving tips to Social Security and Medicare policy. In her role, she has trained more than 100 individuals on blogging and content strategy.</p>
             <img src="images/twitterblue.png"> <a href="http://www.twitter.com/frijolita">@frijolita</a>
             </div>
 
@@ -615,7 +642,7 @@
             </div>
 
             <div class="bio col-sm-5">
-            <p>More information coming soon!</p>
+              <p>Nikki Rappaport is passionate about so many things and she packs every day full with trying to do them all. She writes about baking, DC dining, style, twenty-something life, and home design on her blog Cupcakes for Breakfast. Nikki is the Brand Strategist at Cava Mezze Grill, a DC-born fast-casual restaurant group, where she oversees experiential and digital marketing. Her portfolio includes social media, in-store and online visuals, events, community engagement, PR and much more. She graduated from the George Washington University in 2009 with a BA in Journalism and continued to work for GW for three years doing digital marketing, collegiate licensing and events for admissions and sports marketing. Nikki also dabbles in wedding planning, consulting on creating personal brands, and making the perfect chocolate frosting.</p>
             </div>
 
           </div>
@@ -643,7 +670,8 @@
             </div>
 
             <div class="bio col-sm-5">
-            <p>More information coming soon!</p>
+              <p>Claudia jumped head-first into the world of social media in 2007 when she started working for a boutique social media firm. Going from having no online presence to being named the Washington Post’s “Top Foodie Tweep” in 2010, Claudia has found a passion for building brands’ online presence and reputation. She currently works at Edelman, Public Relations, focusing on clients in the food industry. Claudia maintains her own blog, Brunch and the City, and is the editor of a multi-contributor blog, The Hill is Home, which covers news and events around DC's Capitol Hill neighborhood. She can be found on Twitter and Instagram as @BrunchGirl.</p>
+
             </div>
 
           </div>
@@ -1018,7 +1046,7 @@
 
             <div class="name-title col-sm-4 col-sm-offset-1">
             <img src="images/speakers/amandazimmer-sports.png">
-            <p>AMANDA ZIMMER<br><span7>Production Assistant<br>NBC UNIVERSAL/COMCAST</span7></p>
+            <p>AMANDA ZIMMER<br><span7>Production Assistant</span7><br>NBC UNIVERSAL/COMCAST</p>
             </div>
 
             <div class="bio col-sm-5">
@@ -1033,7 +1061,7 @@
 
             <div class="name-title col-sm-4 col-sm-offset-1">
             <img src="images/speakers/lindsayapplebaum-sports.png">
-            <p>LINDSAY APPLEBAUM<br><span7>Sports Editor<br>WASHINGTON POST</span7></p>
+            <p>LINDSAY APPLEBAUM<br><span7>Sports Editor</span7><br>WASHINGTON POST</p>
             </div>
 
             <div class="bio col-sm-5">
@@ -1099,12 +1127,12 @@
           <div class="row">
 
             <div class="name-title col-sm-4 col-sm-offset-1">
-            <img src="images/speakers/emilyrasowsky-startups.png">
-            <p>EMILY RASOWSKY<br><span7>Digital Strategist<br>SOCIALDRIVER</span7></p>
+            <img src="images/speakers/EMILYRASOWSKY-startups.png">
+            <p>EMILY RASOWSKY<br><span7>Digital Strategist</span7><br>SOCIALDRIVER</p>
             </div>
 
             <div class="bio col-sm-5">
-            <p>Emily Rasowsky is a Digital Strategist at Social Driver, a Digital Innovation Agency in Washington, DC. Emily has worked with clients such as Alliance for Excellent Education, Honda, Kaiser Family Foundation and Easter Seals to connect with their audiences online by optimizing their social and search marketing channels. Emily specializes in social media strategy, SEO, keyword research and helps manage Social Driver’s own marketing efforts. Emily has helped Social Driver’s website attract over 2,000 unique visitors every day. Emily has a background in running and optimizing full-scale digital campaigns in the education space. She helps clients optimize content, build a social strategy and connect with larger audiences. </p>
+            <p>Emily Rasowsky is a Digital Strategist at Social Driver, a Digital Innovation Agency in Washington, DC. Emily has worked with clients such as Alliance for Excellent Education, Honda, Kaiser Family Foundation and Easter Seals to connect with their audiences online by optimizing their social and search marketing channels. Emily specializes in social media strategy, SEO, keyword research and helps manage Social Driver's own marketing efforts. Emily has helped Social Driver's website attract over 2,000 unique visitors every day. Emily has a background in running and optimizing full-scale digital campaigns in the education space. She helps clients optimize content, build a social strategy and connect with larger audiences. </p>
             <img src="images/twitterblue.png"> <a href="http://www.twitter.com/erasowsky">@erasowsky</a>
               
             </div>
@@ -1136,7 +1164,7 @@
 
             <div class="name-title col-sm-4 col-sm-offset-1">
             <img src="images/speakers/juliealderman-student.png">
-            <p>JULIE ALDERMAN<br><span7>Student<br>GWU</span7></p>
+            <p>JULIE ALDERMAN<br><span7>Student</span7><br>GWU</p>
             </div>
 
             <div class="bio col-sm-5">
@@ -1150,8 +1178,8 @@
           <div class="row">
 
             <div class="name-title col-sm-4 col-sm-offset-1">
-            <img src="images/speakers/JulianGomez-student.png">
-            <p>Julian G. Gomez<br><span7>Student<br>AU</span7></p>
+            <img src="images/speakers/juliangomez-students.png">
+            <p>Julian G. Gomez<br><span7>Student</span7><br>AU</p>
             </div>
 
             <div class="bio col-sm-5">
@@ -1166,8 +1194,8 @@
           <div class="row">
 
             <div class="name-title col-sm-4 col-sm-offset-1">
-            <img src="images/speakers/meganackerman-student.png">
-            <p>MEGAN ACKERMAN<br><span7>Digital Strategist<br>INDIGO STRATEGIES</span7></p>
+            <img src="images/speakers/meganackerman-students.png">
+            <p>MEGAN ACKERMAN<br><span7>Digital Strategist</span7><br>INDIGO STRATEGIES</p>
             </div>
             
             <div class="bio col-sm-5">
@@ -1184,7 +1212,7 @@
       <div class="credits">
 
         <p id="creditstext">THE 2014 SOCIAL LEARNING SUMMIT is brought to you by the <a href="http://www.ausmcedu.org">AMERICAN UNIVERSITY SOCIAL MEDIA CLUB</a></p>
-        <p id="creditstext"><a href='http://ausmcedu.org/contact-us/'>CONTACT US</a> | <a href='http://sls11.sched.org/'>SLS11</a> | <a href='http://ausmcedu.org/sls2012/'>SLS12</a> | <a href='http://ausmcedu.org/sls2013'>SLS13</a> | <a href='images/SLS14_sponsorshiplevels.pdf'>BECOME A SPONSOR</a></p>
+        <p id="creditstext"><a href='http://ausmcedu.org/contact-us/'>CONTACT US</a> | <a href='http://sls11.sched.org/'>SLS11</a> | <a href='http://ausmcedu.org/sls2012/'>SLS12</a> | <a href='http://ausmcedu.org/sls2013'>SLS13</a> </p>
         <p id="creditstext">Website designed and created by <a href="http://www.lelafeldmeier.com">Lela Feldmeier</a></p>
 
       </div>
