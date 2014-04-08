@@ -4,6 +4,9 @@
 /* Extra small devices (phones, less than 768px) */
 @media (max-width: 767px) {
 
+								/* ALL PAGES */
+								.pagetitle p { font-size: 60px; }
+
 								/* NAV */
 								nav { height: auto; border-bottom: 0;}
 							    nav ul { width: 100%; display: none; height: auto;}  
@@ -20,11 +23,11 @@
 							        right: 15px;  
 							        top: 10px;  
 							    }
-
-							    li.social {float:left; width:100%; background: #EE5B26; padding: 10px 0px; margin: 10px 0px;} 
+							    li.social {float:left; width:100%; background: #EE5B26; padding: 10px 0px; margin: 10px 0px; margin-top: 30px;} 
 								
 							 	/* PANELSNAV */
 							 	.panelsnav ul { width: 70px; font-size: 12px; padding-bottom: 0px; top:0px;}  
+
 
 								/* HOME PAGE */
 								p#register { margin-top:20px; }
