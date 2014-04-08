@@ -23,55 +23,84 @@ width: 100%;
 }
 
 /*---------------NAVIGATION---------------*/
-.nav{
-	position: fixed;
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  
+    *zoom: 1;  
+}
+
+nav{
+	height: 80px;
+	width: 100%;
+	background-color:#09353f;
+	font-size:16px;
+	font-family: 'Oswald', sans-serif;
+	text-transform:uppercase;
+	font-weight: bold;
+	color:#ffffff;
+	position: relative;
+	/*
 	z-index: 1;
 	padding-top:15px;
-	font-size:16px;
-	text-transform:uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	padding-bottom:10px;
-	background-color:#09353f;
-	color:#ffffff;
+	padding-bottom:10px; */
+	
+
+}
+
+nav ul {
+	padding: 0px;
+	margin: 0 auto;
 	width: 100%;
+	height: 80px;
+
 }
 
+nav li {
+	display: inline;
+	float: left;
+	padding-top: 30px;
+}
 
+nav a {
+	color: #fff;
+	display: inline-block;
+	width: 100px;
+	text-align: center;
+	text-decoration: none;
 
-nav.navbar #nav-list ul.nav li a:link {
+}
+
+nav a:link{
 	text-decoration:none;
-	color:#fff;
+	color:#ffffff;
 }
-
-nav.navbar #nav-list ul.nav li a:hover {
+nav a:hover{
 	text-decoration:none;
 	color:#f06d3e;
 }
-
-nav.navbar #nav-list ul.nav a:visited {
+nav a:visited{
 	text-decoration:none;
-	color:#fff;
+	font-color:#fff;
+}
+nav a:active{
+	text-decoration:none;
+	font-color:#999;
 }
 
-nav.navbar #nav-list ul.nav li a:active {
-	text-decoration:none;
-	color:#999;
+nav a.short {
+	width: 70px;
 }
-
-nav.navbar #nav-list ul.nav li a.active {
-	text-decoration:none;
-	color:#999;
-}
-
-
-
 
 
 .social {
-	float:left;
-	margin-top: -5px;
-	margin-right: 8px;
+	float:right;
+	padding-top:26px;
 }
 
 
@@ -482,5 +511,13 @@ img.soc { width: 200px; }
 	border-color: #fff;
 	outline: 0;
 }
+
+/***** Back to Top *****/
+
+#toTop 									{ display:none; text-decoration:none; position:fixed; bottom:10px; right:10px; overflow:hidden; width:51px; height:51px; border:none; text-indent:-999px; background:url(../images/ui.totop.png) no-repeat left top; }
+#toTopHover 							{ background:url(../images/ui.totop.png) no-repeat left -51px; width:51px; height:51px; display:block; overflow:hidden; float:left; opacity: 0; -moz-opacity: 0; filter:alpha(opacity=0); }
+#toTop:active, #toTop:focus 			{ outline:none; }
+
+
 
 

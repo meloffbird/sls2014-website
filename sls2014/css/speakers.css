@@ -19,57 +19,6 @@ width: 100%;
   margin-right: auto;
 }
 
-/*---------------NAVIGATION---------------*/
-.nav{
-	position: fixed;
-	z-index: 1;
-	padding-top:25px;
-	font-size:16px;
-	text-transform:uppercase;
-	font-family: 'Oswald', sans-serif;
-	font-weight: bold;
-	padding-bottom:20px;
-	padding-left:270px;
-	background-color:#09353f;
-	color:#ffffff;
-	width: 100%;
-}
-
-.nav a{
-	color:#ffffff;
-}
-
-.nav ul {
-	display:inline;
-	list-style-type:none;
-	padding-left:20px;
-	padding-right:10px;
-	color:#ffffff;
-}
-
-.nav a:link{
-	text-decoration:none;
-	color:#ffffff;
-}
-.nav a:hover{
-	text-decoration:none;
-	color:#f06d3e;
-}
-.nav a:visited{
-	text-decoration:none;
-	font-color:#fff;
-}
-.nav a:active{
-	text-decoration:none;
-	font-color:#999;
-}
-
-.social {
-	float:right;
-	margin-bottom:0px;
-	margin-top:-5px;
-}
-
 /*---------------BANNER---------------*/ 
 #speakers-page .banner, #schedule-page .banner{
 	background-color:#096;
@@ -106,9 +55,8 @@ width: 100%;
 	
 /*---------------PANELS NAVIGATION---------------*/
 .panelsnav {
-	position: fixed;
+	position: relative;
 	z-index: 1;
-	margin-top:48px;
 	font-size:14px;
 	text-transform:uppercase;
 	font-family: 'Oswald', sans-serif;
@@ -117,7 +65,6 @@ width: 100%;
 	width: 100%;
 	background-color:#999;
 	padding: 10px 0px;
-	padding-left: 20px;
 }
 
 .panelsnav a{
