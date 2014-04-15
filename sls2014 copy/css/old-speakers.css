@@ -1,0 +1,364 @@
+/*!
+ * Bootstrap v3.0.3 (http://getbootstrap.com)
+ * Copyright 2013 Twitter, Inc.
+ * Licensed under http://www.apache.org/licenses/LICENSE-2.0
+ */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,300italic);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,300);
+
+
+#container-fluid{
+width: 100%;
+  max-width: $container-max-width;
+  padding-left:  $container-gutter;
+  padding-right: $container-gutter;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:    border-box;
+  box-sizing:         border-box;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+/*---------------NAVIGATION---------------*/
+.nav{
+	position: fixed;
+	z-index: 1;
+	padding-top:25px;
+	font-size:16px;
+	text-transform:uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	padding-bottom:20px;
+	padding-left:270px;
+	background-color:#09353f;
+	color:#ffffff;
+	width: 100%;
+}
+
+.nav a{
+	color:#ffffff;
+}
+
+.nav ul {
+	display:inline;
+	list-style-type:none;
+	padding-left:20px;
+	padding-right:10px;
+	color:#ffffff;
+}
+
+.nav a:link{
+	text-decoration:none;
+	color:#ffffff;
+}
+.nav a:hover{
+	text-decoration:none;
+	color:#f06d3e;
+}
+.nav a:visited{
+	text-decoration:none;
+	font-color:#fff;
+}
+.nav a:active{
+	text-decoration:none;
+	font-color:#999;
+}
+
+.social {
+	float:right;
+	margin-bottom:0px;
+	margin-top:-5px;
+}
+
+/*---------------BANNER---------------*/ 
+.banner{
+	background-color:#096;
+	text-align:center;
+	border-bottom:2px solid #39b0ca;
+	border-top:2px solid #39b0ca;
+	background-image:url(../images/speakersbanner.png);
+	background-position:center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	backround-size:cover;
+	width:100%;
+	height:600px;
+	overflow: hidden;
+	padding-top:200px;
+}
+
+.banner img{
+	height:500px;
+	width:auto;
+	overflow:hidden;
+}
+
+.pagetitle p{
+	font-size:80px;
+	text-transform:uppercase;
+	font-family: 'Oswald', sans-serif;
+	color:#EE5B26;
+	padding-top:10px;
+	font-weight:600;
+}
+	
+/*---------------PANELS NAVIGATION---------------*/
+.panelsnav {
+	position: fixed;
+	z-index: 1;
+	margin-top:48px;
+	font-size:14px;
+	text-transform:uppercase;
+	font-family: 'Oswald', sans-serif;
+	font-weight:300;
+	color:#ffffff;
+	width: 100%;
+	background-color:#999;
+	padding: 10px 0px;
+}
+
+.panelsnav a{
+	color:#ffffff;
+}
+
+.panelsnav ul {
+	display:list;
+	list-style-type:none;
+	padding-left:20px;
+	padding-right:10px;
+	color:#ffffff;
+	float:left;
+	padding-top:10px;
+
+}
+
+.panelsnav a:link{
+	text-decoration:none;
+	color:#ffffff;
+}
+.panelsnav a:hover{
+	text-decoration:none;
+	color:#f06d3e;
+}
+.panelsnav a:visited{
+	text-decoration:none;
+	font-color:#fff;
+}
+.panelsnav a:active{
+	text-decoration:none;
+	font-color:#999;
+}
+
+.speakersbanner{
+	background-color:#096;
+	text-align:center;
+	border-bottom:2px solid #39b0ca;
+	border-top:2px solid #39b0ca;
+	background-image:url(../images/speakersbanner.png);
+	background-position:center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	backround-size:cover;
+	width:100%;
+	height:870px;
+	overflow: hidden;
+}
+
+.description #register a{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size:30px;
+	color:#ffffff;
+	background-color:#a14a8e;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:700;
+	padding: 2px 10px 2px 10px;
+	border:2px solid #90427f;
+}
+
+.description #register a:hover{
+	font-family: 'Oswald', sans-serif;
+	font-weight: bold;
+	font-size:30px;
+	color:#f06d3e;
+	background-color:#a14a8e;
+	text-transform:uppercase;
+	text-decoration:none;
+	font-weight:700;
+	padding: 2px 10px 2px 10px;
+	border:2px solid #90427f;
+}
+
+/*---------------DESCRIPTION TEXT---------------*/
+.descriptiontext {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align:center;
+	font-size:26px;
+	padding-top:70px;
+	padding-bottom:70px;
+	background-color:#f1fbfd;
+	border-bottom:2px solid #e3f4f8;
+}
+
+.p1 {
+font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align:center;
+	font-size:26px;
+	color:#a14a8e;
+}
+
+.descriptiontext img{
+	height:50px;
+	width:auto;
+}
+
+.container-fluid h1{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	font-size:30px;	
+	margin-left:200px;
+	padding-top:50px;
+	color:#EE5B26;
+}
+
+.container-fluid h2{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 800;
+	font-size:20px;	
+	margin-left:200px;
+	color:#a14a8e;
+}
+
+.container-fluid h3{
+	font-family: 'Lato', sans-serif;
+	font-size:18px;
+	text-align:left;
+	font-weight:200px;
+	font-style:italic;
+	margin-left:200px;
+	margin-right:200px;
+	padding-bottom:30px;
+}
+
+.speakerstext {
+	width:100%;
+	overflow:auto;
+	padding-top:20px;
+}
+
+.speakerstext .col-md-3{
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	text-align:center;
+	font-size:18px;
+	float:left;
+	margin-left:150px;
+}
+
+.col-md-3 img{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:175px;
+	height:175px;
+}
+
+.speakerstext .col-md-6{
+	font-family: 'Lato', sans-serif;
+	font-size:14px;
+	text-align:left;
+	font-weight:200px;
+	height:300px;
+	display:block;
+	padding-right:100px;
+	float:left;
+	padding-left:50px;
+}
+
+.activism {
+	background-color:#f2f2f2;
+}
+
+.design {
+	background-color:#f2f2f2;
+}
+
+.fashion {
+	background-color:#f2f2f2;
+}
+
+.journalism {
+	background-color:#f2f2f2;
+}
+
+.politics {
+	background-color:#f2f2f2;
+}
+
+.startups {
+	background-color:#f2f2f2;
+}
+.credits{
+	background-color:#09353f;
+	padding-bottom:20px;
+	border-top:2px solid #39b0ca;
+	padding-top:20px;
+}
+
+#creditstext{
+	color:#ffffff;
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.credits a:link{
+	color:#39b0ca;
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform:none;
+}
+
+.credits a:hover{
+	color:#ffffff;
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	text-transform:none;
+}
+
+.credits a:active{
+	color:#39b0ca;
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.credits a:visited{
+	color:#39b0ca;
+	text-align:center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+}
+
+.scheduledoc img{
+	width:100%;
+	height:auto;
+	padding-left: 10px;
+	padding-right:10px;
+	padding-top:100px;
+	padding-bottom:100px;
+}
+
+#ausmclogo {
+	width:100px;
+	height:auto;
+	padding-top:20px;
+}
+
